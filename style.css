@@ -1,3 +1,16 @@
+/* === Watermark === */
+#watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 14px;
+    font-size: 10px;
+    color: #2a2a2a;
+    font-family: 'Share Tech Mono', 'Courier New', monospace;
+    pointer-events: none;
+    z-index: 9999;
+    letter-spacing: 0.05em;
+}
+
 /* === Utility === */
 .hidden {
     display: none !important;
