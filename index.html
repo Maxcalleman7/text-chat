@@ -3,19 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=++, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eye</title>
 </head>
 <body>
 
-        <h1>The Eye</h1>
+    <!-- LOGIN VIEW -->
+    <div id="login-view">
+        <header class="site-header">
+            <img src="logo.png" alt="Logo" class="logo" />
+            <h1>The Eye</h1>
+        </header>
 
         <div id="login-form">
-            <input type="text" id="username" placeholder="Enter your username">
-            <input type="password" id="password" placeholder="Enter your password">
-            <button id="login-btn">Login</button>
+            <input type="text" id="username" placeholder="user" autocomplete="off">
+            <input type="password" id="password" placeholder="pass">
+            <button id="login-btn" class="enter-btn"><span class="bracket left">[</span>&nbsp;ENTER<span class="cursor">_</span>&nbsp;<span class="bracket right">]</span></button>
+        </div>
+    </div>
+
+    <!-- CHAT VIEW -->
+    <div id="chat-view" class="hidden">
+
+        <div id="chat-sidebar">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="Logo" class="sidebar-logo" />
+                <span>// CONTACTS</span>
+            </div>
+            <div class="contact-list">
+                <div class="contact active" data-user="Calle">
+                    <span class="status-dot online"></span>
+                    <span class="contact-name">Calle</span>
+                    <span class="contact-badge">[ON]</span>
+                </div>
+                <div class="contact" data-user="Axel">
+                    <span class="status-dot online"></span>
+                    <span class="contact-name">Axel</span>
+                    <span class="contact-badge">[ON]</span>
+                </div>
+            </div>
+            <button id="logout-btn"><span class="bracket left">[</span>&nbsp;EXIT<span class="bracket right">]</span></button>
         </div>
 
+        <div id="chat-main">
+            <div id="chat-header">
+                <span>// Calle</span>
+                <span class="online-label">[ONLINE]</span>
+            </div>
 
+            <div id="message-feed"></div>
+
+            <div id="typing-indicator" class="hidden">
+                Calle is typing<span class="blink-cursor">_</span>
+            </div>
+
+            <div id="input-area">
+                <span class="input-prefix">&gt;</span>
+                <input type="text" id="message-input" placeholder="type a message..." autocomplete="off" spellcheck="false">
+                <button id="send-btn"><span class="bracket left">[</span>&nbsp;SEND<span class="bracket right">]</span></button>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    </style>
+    <script src="java.js"></script>
 </body>
 </html>
