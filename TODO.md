@@ -1,0 +1,5 @@
+- Lista ut hur skiten ska funka server-side 
+- Göra en simpel webb-sida
+- Koppla till servern 
+- Enkryptera meddelanden? 
+- Konton 
