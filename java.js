@@ -1,3 +1,9 @@
+const SoundBtn = document.getElementById('SoundBtn');
+SoundBtn.addEventListener('click', () => {
+    const audio = new Audio('Audio/fears-to-fathom-notification-sound.mp3');
+    audio.play();
+});
+
 const users = {
     Calle: {
         status: 'online',
